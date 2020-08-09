@@ -2,9 +2,8 @@ import React from 'react';
 // import React, { Fragment } from 'react'; 
 
 // Funtional Components
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo = 'Hola Mundo' }) => {
 
-    const saludo = 'Hola Mundo';
 
     return (
         <>
@@ -13,6 +12,7 @@ const PrimeraApp = () => {
             <p>Mi primera aplicación</p>
         </>
     );
+
 }
 
 export default PrimeraApp;
