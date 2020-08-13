@@ -1,18 +1,24 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { shallow } from 'enzyme';
+
 import PrimeraApp from '../PrimeraApp';
 
-import '@testing-library/jest-dom/extend-expect';
 
 describe('Pruebas en <PrimeraApp />', () => {
 
-    test('debe mostrar el mensaje "Hola, Soy Tony"', () => {
+    // test('debe mostrar el mensaje "Hola, Soy Tony"', () => {
+    // const saludo = 'Hola, Soy Tony';
+    // const {getByText} = render( <PrimeraApp saludo = { saludo } /> );
+    // expect(getByText(saludo) ).toBeInTheDocument();
+    // });
+
+    test('debe mostrar <PrimeraApp /> correctamente ', () => {
 
         const saludo = 'Hola, Soy Tony';
+        const wrapper = shallow(<PrimeraApp saludo={saludo} />)
 
-        const {getByText} = render( <PrimeraApp saludo = { saludo } /> );
-
-        expect(getByText(saludo) ).toBeInTheDocument();
+        expect( wrapper ).toMatchSnapshot();
 
     });
 
