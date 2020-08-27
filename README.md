@@ -1,4 +1,4 @@
-# React: Desarrollo de los Fundamentos con Pruebas Unitarias y de Integración en su versión en JavaScript.
+# React: Desarrollo de los Fundamentos con Pruebas Unitarias y de Integración en su versión de JavaScript.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/66401629/90304663-122bcb80-de88-11ea-8f3a-e8fab4f37732.png" width="400"></p>
 
